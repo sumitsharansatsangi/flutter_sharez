@@ -187,7 +187,7 @@ void main() {
       );
       await tester.pumpApp(
         ProviderScope(
-          parent: container,
+          
           child: Scaffold(
             body: const Text(
               'I am the child',
@@ -234,7 +234,7 @@ void main() {
 
       await tester.pumpApp(
         ProviderScope(
-          parent: container,
+          
           child: Material(
             child: const Scaffold(
               body: Text(
@@ -289,7 +289,7 @@ void main() {
 
       await tester.pumpApp(
         ProviderScope(
-          parent: container,
+          
           child: Material(
             child: const Scaffold(
               body: Text(

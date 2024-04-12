@@ -38,9 +38,8 @@ void main() {
           );
           addTearDown(container.dispose);
           await tester.pumpApp(
-            ProviderScope(
-              parent: container,
-              child: const CounterView(),
+            const ProviderScope(
+              child: CounterView(),
             ),
           );
           await tester.pumpAndSettle();
@@ -58,9 +57,9 @@ void main() {
           );
           addTearDown(container.dispose);
           await tester.pumpApp(
-            ProviderScope(
-              parent: container,
-              child: const CounterView(),
+            const ProviderScope(
+              
+              child: CounterView(),
             ),
           );
           await tester.pumpAndSettle();
@@ -83,7 +82,7 @@ void main() {
           final currentTheme = container.read(themecontrollerProvider);
           await tester.pumpApp(
             ProviderScope(
-              parent: container,
+              
               child: MaterialApp(
                 theme: Themes.theme,
                 darkTheme: Themes.darkTheme,
@@ -123,7 +122,7 @@ void main() {
           final currentTheme = container.read(themecontrollerProvider);
           await tester.pumpApp(
             ProviderScope(
-              parent: container,
+              
               child: MaterialApp(
                 theme: Themes.theme,
                 darkTheme: Themes.darkTheme,
@@ -160,7 +159,7 @@ void main() {
           final currentTheme = container.read(themecontrollerProvider);
           await tester.pumpApp(
             ProviderScope(
-              parent: container,
+              
               child: MaterialApp(
                 theme: Themes.theme,
                 darkTheme: Themes.darkTheme,
@@ -210,7 +209,7 @@ void main() {
           final currentTheme = container.read(themecontrollerProvider);
           await tester.pumpApp(
             ProviderScope(
-              parent: container,
+              
               child: MaterialApp(
                 theme: Themes.theme,
                 darkTheme: Themes.darkTheme,
@@ -260,7 +259,7 @@ void main() {
           final currentTheme = container.read(themecontrollerProvider);
           await tester.pumpApp(
             ProviderScope(
-              parent: container,
+              
               child: MaterialApp(
                 theme: Themes.theme,
                 darkTheme: Themes.darkTheme,
